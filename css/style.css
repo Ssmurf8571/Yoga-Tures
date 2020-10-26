@@ -1,0 +1,978 @@
+
+
+@font-face{
+	font-family: 'Muller';
+	src: url('../fonts/MullerRegular.ttf');
+}
+
+html,
+body {
+	height: 100%;
+	background: #fff;
+	font-family: 'Roboto', 'Muller', sans-serif;
+	-webkit-font-smoothing: antialiased;
+	font-smoothing: antialiased;
+	margin: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	margin: 0;
+	color: #000000;
+}
+
+h1 {
+	font-size: 70px;
+}
+
+h2 {
+	font-size: 36px;
+}
+
+h3 {
+	font-size: 30px;
+}
+
+h4 {
+	font-size: 24px;
+}
+
+h5 {
+	font-size: 20px;
+}
+
+h6 {
+	font-size: 16px;
+}
+
+p {
+	font-size: 14px;
+	color: #878787;
+	line-height: 2;
+}
+
+input:focus,
+select:focus,
+button:focus,
+textarea:focus {
+	outline: none;
+}
+
+a {
+	text-decoration: none;
+	outline: none;
+}
+
+ul,
+ol {
+	padding: 0;
+	margin: 0;
+	list-style: none;
+}
+
+/* Preloder */
+#preloder {
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	z-index: 999999;
+	background: #fff;
+}
+
+.loader {
+	width: 40px;
+	height: 40px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	margin-top: -13px;
+	margin-left: -13px;
+	border-radius: 60px;
+	animation: loader 0.8s linear infinite;
+	-webkit-animation: loader 0.8s linear infinite;
+}
+
+@keyframes loader {
+	0% {
+		-webkit-transform: rotate(0deg);
+		transform: rotate(0deg);
+		border: 4px solid #f44336;
+		border-left-color: transparent;
+	}
+	50% {
+		-webkit-transform: rotate(180deg);
+		transform: rotate(180deg);
+		border: 4px solid #673ab7;
+		border-left-color: transparent;
+	}
+	100% {
+		-webkit-transform: rotate(360deg);
+		transform: rotate(360deg);
+		border: 4px solid #f44336;
+		border-left-color: transparent;
+	}
+}
+
+@-webkit-keyframes loader {
+	0% {
+		-webkit-transform: rotate(0deg);
+		border: 4px solid #f44336;
+		border-left-color: transparent;
+	}
+	50% {
+		-webkit-transform: rotate(180deg);
+		border: 4px solid #673ab7;
+		border-left-color: transparent;
+	}
+	100% {
+		-webkit-transform: rotate(360deg);
+		border: 4px solid #f44336;
+		border-left-color: transparent;
+	}
+}
+
+.container {
+	margin: 0 auto;
+}
+
+.bg-header {
+	background-image: url("../img/header-background.png");
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: 829px;
+}
+
+header {
+	padding: 20px 0 0;
+}
+
+.header-nav-menu img {
+	float: left;
+}
+
+.header-contact-info {
+	float: right;
+	margin: 5px 0 0;
+}
+
+.header-contact-info p {
+		font-size: 14px;
+		font-family: "Muller";
+		color: rgb(255, 255, 255);
+		line-height: 1.286;
+} 
+
+.header-contact-info span {
+	float: right;
+	font-size: 20px;
+	font-family: "Muller";
+	font-weight: bold;
+	color: rgb(255, 255, 255);
+	line-height: 0.9;
+}
+
+.header-tittle {
+	margin: 275px 0 0;
+	text-align: center;
+}
+
+.header-tittle h1 {
+	font-size: 60px;
+		color: rgb(255, 255, 255);
+		line-height: 1.2;
+		text-transform: uppercase;
+}
+
+.header-tittle h2 {
+	margin: 45px 0 0;
+	font-size: 20px;
+	font-family: "Muller";
+	color: rgb(255, 255, 255);
+	text-transform: uppercase;
+	line-height: 1.2;
+}
+  
+.header-tittle p {
+	margin: 35,508px 0 0;
+	font-size: 16px;
+	font-family: 'Muller';
+	color: rgb(255, 255, 255);
+	line-height: 1.2;
+}
+
+.header-tittle button {
+	margin: 102px 0 0;
+	background: none;
+	font-size: 18px;
+	font-family: "Muller";
+	font-weight: bold;
+	color: rgb(255, 255, 255);
+	border: 2px solid  rgb(255, 255, 255);
+	text-transform: uppercase;
+	line-height: 1.2;
+	text-align: center;
+	padding: 20px 72px;
+}
+
+.header-social-icons {
+	display: flex;
+	justify-content: center;
+}
+
+.header-social-icons a {
+	margin: 122px 6px 0;
+}
+
+.yellow-slide {
+	background:  rgb(248, 242, 228);
+}
+
+.who-is-yoga {
+	padding: 50px 0;
+	display: flex;
+}
+
+.right-text-yoga {
+	margin: 0 0 0 80px;
+	text-align: left;
+}
+
+.right-text-yoga h3 {
+	font-size: 25px;
+	font-family: "Muller";
+	color: rgb(0, 0, 0);
+  	line-height: 1.2;
+}
+
+.right-text-yoga h1 {
+	font-size: 50px;
+	font-family: "Muller";
+	color: rgb(0, 0, 0);
+  	line-height: 1.2;
+}
+
+.right-text-yoga p {
+  	margin: 40px 0;
+  	font-size: 16px;
+ 	font-family: "Muller";
+	color: rgb(0, 0, 0);
+  	line-height: 1.2;
+  	text-align: left;
+}
+
+.indent {
+	padding: 80px 0;
+}
+
+.five-reasons {
+	text-align: center;
+}
+.tittle-section {
+	padding: 0 0 20px;
+	text-align: center;
+}
+
+.tittle-section h2 {
+	margin: 0 0 20px;
+	font-size: 36px;
+	font-family: "Muller";
+	color: rgb(0, 0, 0);
+	line-height: 1.2;
+}
+
+.tittle-section p {
+	margin: 37px;
+	color: #3f3f3f;
+	font-size: 18px;
+	font-weight: 400;
+	font-style: italic;	
+}
+
+.five-reasons-images {
+	margin: 50px 0 0;
+	display: flex;
+	justify-content: center;
+}
+
+.five-reasons-images .reason {
+	margin: 0 45px;
+	width: 240px;
+}
+
+.five-reasons-images .reason p {
+	font-size: 16px;
+	font-family: "Muller";
+	color: rgb(0, 0, 0);
+	line-height: 1.2;
+}
+
+/* Slideshow container */
+.slideshow-container {
+	max-width: 1000px;
+	position: relative;
+	margin: auto;
+  }
+
+/* Caption text */
+.text {
+	padding: 8px 4px;
+	position: absolute;
+	bottom: 212px;
+	text-align: center;
+	left: 26%;
+}
+  
+.text h4, .text h6 {
+	max-width: 440px;
+}
+
+.text h4{
+	margin: 0 auto 24px;
+	color: #ffffff;
+	font-family: "Muller";
+	font-size: 26px;
+	font-weight: 400;
+	text-transform: uppercase;
+}
+	
+.text h6 {
+	color: #ffffff;
+	font-family: "Muller";
+	font-size: 18px;
+	font-weight: 400;
+}
+  
+  /* Fading animation */
+.fade {
+	text-align: center;
+	-webkit-animation-name: fade;
+	-webkit-animation-duration: 1.5s;
+	animation-name: fade;
+	animation-duration: 1.5s;
+}
+  
+@-webkit-keyframes fade {
+	from {opacity: .4} 
+	to {opacity: 1}
+}
+  
+@keyframes fade {
+	from {opacity: .4} 
+	to {opacity: 1}
+}
+
+.fade img {
+	max-width: 100%;
+}
+  
+.product__list {
+	display: flex;
+	flex-wrap: wrap;
+	place-content: center;
+}
+
+.block__product {
+	margin: 10px;
+	width: 215px;
+	height: 180px;
+	background-color: #fff8e6;
+	text-align: center;
+}
+
+.block__product a{
+	/* Style for "Читать под" */
+	color: #5a56af;
+	font-family: "Muller";
+	font-size: 12px;
+	font-weight: 400;
+}
+
+.block__product button {
+	/* Style for "ОСТАВИТЬ З" */
+	margin: 17px 0 20px;
+	color: #feb072;
+	font-family: "Muller";
+	font-size: 12px;
+	font-weight: bold;
+	padding: 15px 31px;
+	border: 2px solid #e28234;
+	background-color: #fff8e6;
+}
+
+.block__product button:hover {
+	color: #fff;
+	background-color: #e28234;
+}
+
+.ayurveda h5{
+	/* Style for "Аюрведа -" */
+	max-width: 920px;
+	color: #000000;
+	font-family: "Muller";
+	font-size: 18px;
+	font-weight: 400;
+	text-align: center;
+}
+
+.ayurveda h5:last-child{
+	margin: 30px 0 0;
+}
+
+.program-for-ayurveda {
+	/* Style for "Программа" */
+	margin: 63px auto;
+	max-width: 621px;
+	color: #000000;
+	font-family: "Muller";
+	font-size: 24px;
+	font-weight: 400;
+}
+
+.program-list__ayurveda {
+	margin: 62px 0 0;
+}
+
+.block__program-list {
+	margin: 30px 0;
+	display: flex;
+	max-width: 621px;
+}
+
+.block__program-list img {
+	margin-right: 39px;
+	height: fit-content;
+}
+
+
+.block__program-list h6 {
+/* Style for "индивидуал" */
+	align-self: center;
+	max-width: 462px;
+	color: #000000;
+	font-family: "Muller";
+	font-size: 18px;
+	font-weight: 400;
+}
+
+.bottom-section {
+	margin: 0 0 80px;
+}
+
+.yellow__block {
+	/* Style for "Прямоуголь" */
+margin: -31px 0 0 -30px;
+width: 725px;
+height: 264px;
+background-color: #f8f2e4;
+}
+
+.text__center__yellow-block {
+	margin: -233px 0 0;
+	display: flex;
+}
+
+.left__position {
+	display: flex;
+	max-width: 480px;
+	margin: 0 auto;
+}
+
+.photo-list__line {
+	display: block;
+}
+
+.photo-list__line img {
+	margin: 21px 21px 0 0;
+}
+
+.photo-list__line img:first-child {
+	margin: 0 21px 0 0;
+}
+
+.right__position {
+	margin: 24px auto 0;
+	max-width: 460px;
+}
+
+.right__position h3 {
+	/* Style for "Аюрведичес" */
+margin: 0 0 9px;
+color: #000000;
+font-family: "Muller";
+font-size: 30px;
+font-weight: 400;
+}
+
+.right__position p {
+	/* Style for "Индия, шта" */
+height: 13px;
+color: #4b4b4b;
+font-family: "Muller";
+font-size: 14px;
+font-weight: 400;
+}
+
+.right__position h6 {
+	/* Style for "Мы будем ж" */
+margin: 35px 0 58px;
+max-width: 460px;
+color: #000000;
+font-family: "Muller";
+font-size: 12px;
+font-weight: 400;
+}
+
+.number__list {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.columm-list {
+	/* Style for "комнаты ка" */
+width: 222px;
+color: #454545;
+font-family: "Muller";
+font-size: 12px;
+font-weight: 400;
+}
+
+.columm-list li {
+	background: url(../img/li/number.svg) no-repeat;
+	padding: 1px 28px 10px 29px;
+}
+
+.static-height {
+	height: 1140px;
+}
+
+.instructors__list {
+	margin: 50px 0 0;
+}
+
+.first-instructor img, .second-instructor img {
+	width: 100%;
+}
+
+.instructor__text {
+	position: relative;
+	display: flex;
+	margin: -231px 0 0;
+    background: rgba(68, 68, 68, 0.5);
+	padding: 40px 88px 47px 59px;
+}
+
+.instructor-name {
+	width: 36.267%;
+	height: 78px;
+	border-right: 2px solid #ffffff;
+}
+
+.instructor-name h3 {
+margin: 0 0 25px;
+font-size: 30px;
+font-weight: 700;
+color: #ffffff;
+}
+
+.instructor-name p {
+margin: 0 0 5px;
+height: 16px;
+font-size: 16px;
+color: #ffffff;
+font-weight: 400;
+}
+
+.instructor-tittle {
+	margin: 0 0 0 49px;
+}
+
+.instructor-tittle  p{
+	/* Style for "Международ" */
+	margin: 0;
+max-width: 463px;
+color: #ffffff;
+font-size: 14px;
+font-weight: 400;
+}
+
+.second-instructor {
+	margin: 19px 0 0;
+}
+
+.mySlides {
+	text-align: center;
+}
+
+.prev, .next {
+	cursor: pointer;
+	position: absolute;
+	top: 50%;
+	margin-top: -22px;
+	padding: 16px;
+	color: #b8b8b8;
+	font-size: 25px;
+	transition: 0.6s ease;
+	user-select: none;
+}
+  
+  /* Position the "next button" to the right */
+.next {
+	right: 0;
+	border-radius: 3px 0 0 3px;
+}
+
+.dot {
+	cursor: pointer;
+	width: 6px;
+	height: 6px;
+	background-color: #b4b4b4;
+	margin: 0 2px;
+	border-radius: 50%;
+	display: inline-block;
+	transition: background-color 0.6s ease;
+}
+  
+.active {
+/* Style for "Эллипс 6 к" */
+margin: 0 0 -3px;
+width: 10px;
+height: 10px;
+background-color: transparent;
+border: 2px solid #b4b4b4;
+}
+
+.reviews {
+	margin: 50px 0 0;
+}
+
+.reviews-name {
+	display: flex;
+	place-content: center;
+	place-items: center;
+	text-align: left;
+}
+
+.text__block {
+	margin: 0 0 0 38px;
+	color: #000000;
+	font-size: 18px;
+	font-weight: 400;
+	max-width: 569px;
+}
+
+.text__block span {
+color: #c94410;
+font-size: 12px;
+font-weight: 400;
+text-decoration: underline;
+}
+
+.text__block p {
+	font-size: 14px;
+	font-weight: 400;
+	color: #393939;
+	line-height: 17px;
+}
+
+.container-leader-list {
+	margin: 50px 0 0;
+}
+
+.line__leader-list {
+	display: flex;
+	justify-content: center;
+}
+
+.line__leader-list:last-child {
+	margin: 57px 0 0;
+}
+
+.leader__list {
+	margin: 0 41px;
+	width: 216px;
+	text-align: center;
+}
+
+.leader__list img {
+	margin: 0 0 38px;
+}
+
+.leader__list h5 {
+	margin: 0 0 19px;
+	color: #000000;
+	font-size: 18px;
+	font-weight: 400;
+}
+
+.leader__list p {
+	color: #000000;
+	font-size: 16px;
+	font-weight: 400;
+	line-height: 17px;
+}
+
+.container__remote__claim {
+	max-width: 1570px;
+	margin: 40px auto 0;
+	display: flex;
+	justify-content: center;
+}
+
+.remote__claim__item {
+	text-align: center;
+}
+
+.remote__claim__item p {
+	color: #3f3f3f;
+	font-size: 12px;
+	font-weight: 400;
+}
+
+.remote__claim__item button {
+color: #ea7231;
+font-size: 12px;
+font-weight: 400;
+text-decoration: underline;
+background: transparent;
+border: 0px;
+}
+
+.next__selector {
+	margin: 0 auto;
+	color: #f0f0f0;
+	align-self: center;
+}
+
+.fake-container {
+	width: 100%;
+}
+
+.wrapper__tour-prices {
+margin: 0 auto;
+padding: 49px 51px 44px 49px;
+max-width: 720px;
+height: 117px;
+background-color: #ffffff;
+}
+
+.tittle__price {
+	float: left;
+}
+
+.tittle__price h5 {
+	font-weight: 400;
+	line-height: 48px;
+}
+
+.tittle__price span {
+	color: #000000;
+	font-weight: 700;
+	line-height: 48px
+}
+
+.total__price {
+	float: right;
+	line-height: 48px;
+	font-weight: 400;
+}
+
+.total__price h5 {
+	font-weight: 400;
+	color: #dd490f;
+}
+
+.total__price span {
+	font-weight: 700;
+	color: #dd490f;
+}
+
+.wrapper__special__tour {
+	padding: 15px 55px 15px 50px;
+	background-color: #f4e1b6;
+	display: flex;
+	align-items: center;
+	max-width: 715px;
+    margin: 0 auto;
+}
+
+.wrapper__special__tour h5 {
+	font-weight: 400;
+	margin-right: 66px;
+}
+
+.wrapper__special__tour button {
+	background: transparent;
+	color: #e28234;
+	font-size: 12px;
+	font-weight: 700;
+	padding: 16px 49px 14px 43px;
+	border: 2px solid #e28234;
+}
+
+.wrapper__included__the__price {
+	text-align: center;
+	margin-bottom: 44px;
+}
+
+.wrapper__included__the__price h4 {
+	margin: 49px 0 39px;
+	font-weight: 400;
+	line-height: 60px;
+}
+
+.wrapper__included__the__price li, .wrapper__not__included li {
+	background: url(../img/li/check.svg) left 15px no-repeat;
+	color: #4e4e4e;
+	font-size: 18px;
+	font-weight: 400;
+	text-align: left;
+    padding: 0 0 0 34px;
+    max-width: 680px;
+    margin: 0 auto;
+    line-height: 44px;
+}
+
+.wrapper__not__included {
+	text-align: center;
+}
+
+.wrapper__not__included h4 {
+	margin: 0 0 36px;
+	font-weight: 400;
+	line-height: 60px;	
+}
+
+.wrapper__not__included li {
+	background: url(../img/li/cross.svg) left 17px no-repeat;
+}
+
+.wrapper__not__included h6 {
+	margin: 48px auto 0;
+	max-width: 735px;
+	text-align: center;
+	line-height: 22px;
+}
+
+.wrapper__wrnt-safety p {
+	text-align: center;
+}
+
+.wrapper__wrnt-safety h4 {
+	margin: 61px 0 35px;
+	text-align: center;
+}
+
+.container__documentation {
+	margin: 0 auto;
+	display: flex;
+	flex-wrap: wrap;
+	max-width: 901px;
+    text-align: -webkit-center;
+}
+
+.documentation {
+	margin: 0 auto;
+}
+
+.documentation p {
+	width: 183px;
+	color: #000000;
+}
+
+.contacts__wrapper {
+	margin: 28px 0 29px;
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.social__icons {
+	margin: 18px 0 0;
+}
+
+.yellow__fb {
+	margin: 0 20px;
+}
+
+.phone__bar {
+	margin-left: 134px;
+}
+
+.phone__bar p {
+	margin: 13px 0 7px;
+	color: #000000;
+}
+
+.container__office-maps {
+	margin: 17px 0 0;
+	display: flex;
+	flex-wrap: wrap;
+	max-width: 640px;
+}
+
+.office {
+	margin: 0 auto;
+}
+
+.office p {
+	color: #000000;
+	font-size: 11px;
+	font-weight: 400;
+}
+
+footer {
+	height: 90px;
+	background-color: #383838;
+}
+
+.container_footer {
+	margin: 0 auto;
+	max-width: 985px;
+}
+
+.wrapper__footer {
+    padding: 14px 0 0;
+}
+
+.footer_left__content {
+	display: flex;
+	float: left;
+}
+
+.footer_left__content img {
+	width: 51px;
+	height: 66px;
+}
+
+.footer-text {
+	margin-left: 39px;
+}
+
+.footer-text p {
+	color: #ffffff;
+	font-size: 12px;
+}
+
+.footer-text span {
+	color: #ffffff;
+	font-size: 18px;
+	font-weight: 700;
+	text-decoration: underline;
+}
+
+.footer_right__content {
+	float: right;
+	max-width: 395px;
+}
+
+.footer_right__content p {
+	color: #ffffff;
+	font-size: 12px;
+	line-height: 1;
+}

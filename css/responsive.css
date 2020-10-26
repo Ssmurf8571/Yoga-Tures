@@ -1,0 +1,100 @@
+@media (min-width: 1200px){
+    .container {width: 940px;}
+}
+
+@media (max-width:1199px) and (min-width: 992px){
+    .container {width: 920px;}
+    .instructor__text {width: 790px;padding: 40px 71px 47px 59px;}
+    .container_footer {max-width: 945px;}
+}
+
+@media (max-width:991px) and (min-width: 768px){
+    .container {width: 730px;}
+    .text {left: 19%;}
+    .text__center__yellow-block {display: block;}
+    .instructor-tittle {margin: 0 0 0 33px;}
+    .instructor__text {margin: -215px 0 0; padding: 35px 59px 35px 59px;}
+    .container__remote__claim {display: none;}
+    .container_footer {max-width: 735px;}
+}
+
+@media (max-width:767px){
+    .container {padding: 0 15px;}
+    .who-is-yoga {flex-wrap: wrap;}
+    .foto-yoga {width: calc(100vw - 30px); margin: 0 auto;}
+    .right-text-yoga {margin: 35px 0 0;}
+    .right-text-yoga h3, .right-text-yoga h1 {text-align: center;}
+    .number__list {place-content: center;}
+    .five-reasons-images {flex-wrap: wrap;}
+    .text {left: 0; right: 0; bottom: 24%;}
+    .text h6 {width: 100%; margin: 0 auto;}
+    .text2 {bottom: 10%;}
+    .text__center__yellow-block {flex-wrap: wrap; margin: -110px 0 0;}
+    .instructor-tittle {width: 100%;}
+    .instructor-name h3 {margin: 0 15px 25px 0;}
+    .static-height {height: auto;}
+    .line__leader-list {flex-wrap: wrap;}
+    .container__remote__claim {display: none;}
+    .yellow__block {display: none;}
+    footer {height: 170px;}
+}
+
+@media (max-width:767px) and (min-width:430px) {
+    .foto-yoga {width: auto;}
+    .text {bottom: 34%;}
+    .text2 {bottom: 29%;}
+}
+
+@media (max-width:728px) and (min-width:639px) {
+    .wrapper__tour-prices {height: 244px;}
+}
+
+@media (max-width:720px) {
+    .footer_left__content, .footer_right__content {float: none;}
+    .wrapper__footer {margin: 0 auto; max-width: 395px; text-align: center;}
+    .footer-text {margin-left: 9.877%;}
+}
+
+@media (max-width:646px) {
+    .instructor__text {margin: -4px 0 0; padding: 40px 15px 47px; background: none;}
+    .instructor-name {border-right: 2px solid #000;}
+    .instructor-name h3, .instructor-name p {color: #000;}
+    .instructor-tittle p {color: #000;}
+}
+
+@media (max-width:639px) {
+    .wrapper__special__tour {display: block; text-align: center;}
+    .wrapper__special__tour h5 {margin-right: 0;}
+    .wrapper__special__tour button {margin: 15px 0 0;}
+    .wrapper__tour-prices {height: 416px;}
+}
+
+@media (max-width:603px) {
+    .contacts__wrapper {display: block;}
+    .phone__bar {margin-left: 0; margin: 15px 0 0;}
+}
+
+@media (max-width:566px) {
+    .text__block {margin: 0;}
+    .reviews-name {display: block; text-align: center;}
+}
+
+@media (max-width:500px) {
+    .left__position {flex-wrap: wrap; text-align: center;}
+}
+
+@media (max-width:485px) {
+    .instructor__text {display: block;}
+    .instructor-name {border-right: 0;}
+    .instructor-name p {height: auto;}
+    .instructor-tittle {margin: 70px 0 0 0;}
+    .instructor-tittle:last-child {margin: 105px 0 0 0;}
+}
+
+@media (max-width:426px) {
+    .wrapper__tour-prices {height: 558px;}
+}
+
+@media (max-width:379px) {
+    .instructor-tittle:last-child {margin: 140px 0 0;}
+}
